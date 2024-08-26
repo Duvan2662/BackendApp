@@ -2,7 +2,8 @@ import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 
 @Schema()
 export class User {
-    // _id:string; //Mongo lo hace por mi
+
+    _id?:string; //Mongo lo hace por mi
 
     @Prop({unique:true, required:true})
     name:string;
