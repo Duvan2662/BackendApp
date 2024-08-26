@@ -15,7 +15,7 @@ export class User {
     password?:string;
 
     @Prop({default:true})
-    isActive:string;
+    isActive:boolean;
 
     @Prop({type:[String], default:['user']}) //[['user','Admin', ....]
     roles:string[];
