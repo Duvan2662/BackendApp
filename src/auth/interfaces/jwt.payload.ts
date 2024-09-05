@@ -1,7 +1,10 @@
-export interface JwtPayLoad{
 
-    id:string;
-    dateCreate?:number;
-    dateExpired?:number;
-    
+
+
+export interface JwtPayload {
+
+    id: string;
+    iat?: number;
+    exp?: number;
+
 }
